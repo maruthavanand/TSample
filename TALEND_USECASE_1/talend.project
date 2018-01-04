@@ -85,20 +85,6 @@
         <elementParameter xmi:id="_yMdg9_FlEeeJIpIEyjUnIA" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" contextMode="false"/>
       </parameters>
     </implicitContextSettings>
-    <ItemsRelations xmi:id="_yMnRsPFlEeeJIpIEyjUnIA">
-      <baseItem xmi:id="_yMnRsfFlEeeJIpIEyjUnIA" id="_jhC9sOyaEee5va64MjJCzQ" version="0.1" type="job"/>
-      <relatedItems xmi:id="_yMnRsvFlEeeJIpIEyjUnIA" id="SQLike" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRs_FlEeeJIpIEyjUnIA" id="Numeric" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRtPFlEeeJIpIEyjUnIA" id="Relational" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRtfFlEeeJIpIEyjUnIA" id="TalendString" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRtvFlEeeJIpIEyjUnIA" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRt_FlEeeJIpIEyjUnIA" id="MDM" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRuPFlEeeJIpIEyjUnIA" id="DataOperation" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRufFlEeeJIpIEyjUnIA" id="StringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRuvFlEeeJIpIEyjUnIA" id="TalendDataGenerator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRu_FlEeeJIpIEyjUnIA" id="TalendDate" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_yMnRvPFlEeeJIpIEyjUnIA" id="Mathematical" version="Latest" type="routine"/>
-    </ItemsRelations>
     <migrationTask xmi:id="_H44mUPFlEeeJIpIEyjUnIA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_H45NYPFlEeeJIpIEyjUnIA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_H45NYfFlEeeJIpIEyjUnIA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
