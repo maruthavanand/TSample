@@ -175,6 +175,8 @@
       <relatedItems xmi:id="_XUe7GPSBEeeyTafi9Hj9Lg" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_XUe7GfSBEeeyTafi9Hj9Lg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_XUe7GvSBEeeyTafi9Hj9Lg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ebo8IPSHEeeyTafi9Hj9Lg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ebo8IfSHEeeyTafi9Hj9Lg" id="MDM" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_H44mUPFlEeeJIpIEyjUnIA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_H45NYPFlEeeJIpIEyjUnIA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
