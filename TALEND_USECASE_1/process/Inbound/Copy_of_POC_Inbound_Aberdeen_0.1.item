@@ -15,6 +15,7 @@
     <contextParameter comment="" name="YYYYMM" prompt="YYYYMM?" promptNeeded="false" repositoryContextId="_WVfYIOPjEeed2bvhqEVQlw" type="id_String" value="201712"/>
   </context>
   <parameters>
+    <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="64" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
@@ -144,7 +145,7 @@
     <elementParameter field="FILE" name="PUBLIC_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;LandingZone&quot;"/>
-    <elementParameter field="TEXT" name="KEY" value="&quot;TalendPoc/inbound&quot;"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;TalendPoc/inbound/DnB_BusIntel_112017_converted.csv.gz&quot;"/>
     <elementParameter field="FILE" name="FILE" value="&quot;/opt/Talend-6.4.1/ScriptSheets/Inbound/DnB_BusIntel_112017_converted.csv.gz&quot;"/>
     <elementParameter field="CHECK" name="ENABLE-SERVER-SIDE-ENCRYPTION" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
