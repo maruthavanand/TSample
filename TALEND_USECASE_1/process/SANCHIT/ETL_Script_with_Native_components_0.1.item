@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Redshift_dev_AdditionalParams" prompt="Redshift_dev_AdditionalParams?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="tcpKeepAlive=true"/>
+    <contextParameter comment="" name="Redshift_dev_Database" prompt="Redshift_dev_Database?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="dev"/>
+    <contextParameter comment="" name="Redshift_dev_Login" prompt="Redshift_dev_Login?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="parthasarathyr"/>
+    <contextParameter comment="" name="Redshift_dev_Password" prompt="Redshift_dev_Password?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_Password" value="hvV8EsWvFIsh8Sk0CUBhVw=="/>
+    <contextParameter comment="" name="Redshift_dev_Port" prompt="Redshift_dev_Port?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="5439"/>
+    <contextParameter comment="" name="Redshift_dev_Schema" prompt="Redshift_dev_Schema?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="talend"/>
+    <contextParameter comment="" name="Redshift_dev_Server" prompt="Redshift_dev_Server?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="10.241.4.56"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="224" show="false"/>
