@@ -162,7 +162,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Setting Schema"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRedshiftRow_1">
-      <column comment="" key="true" length="20" name="DUNS" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="DUNS" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BUSINESS_INSIGHT_CLUSTER" nullable="true" pattern="" precision="-1" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
@@ -215,11 +215,11 @@
     <elementParameter field="CHECK" name="TABLE_WITH_SCHEMA" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRedshiftOutput_2">
-      <column comment="" key="false" length="20" name="DUNS" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="true" length="20" name="DUNS" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BUSINESS_INSIGHT_CLUSTER" nullable="true" pattern="" precision="-1" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="20" name="DUNS" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="true" length="20" name="DUNS" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BUSINESS_INSIGHT_CLUSTER" nullable="true" pattern="" precision="-1" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
