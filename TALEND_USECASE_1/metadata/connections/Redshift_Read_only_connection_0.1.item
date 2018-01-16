@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_GisfoPqeEeelrPbTX981TA" name="Redshift_Read_only_connection" id="_ndsWgPqdEeelrPbTX981TA" label="Redshift_Read_only_connection" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://10.241.4.56:5432/dev" dbVersionString="PRIOR_TO_V9" Port="5432" Username="parthasarathyr" Password="hvV8EsWvFIsh8Sk0CUBhVw==" ServerName="10.241.4.56" DatasourceName="" FileFieldName="" SID="dev" SqlSynthax="SQL Syntax" StringQuote="Adsoln@123&quot;" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
-  <taggedValue xmi:id="_Giu74PqeEeelrPbTX981TA" tag="Is Conn Need Reload" value="false"/>
-  <taggedValue xmi:id="_Gi4F0PqeEeelrPbTX981TA" tag="package filter" value=""/>
-  <taggedValue xmi:id="_GjAosPqeEeelrPbTX981TA" tag="Status" value=""/>
-  <taggedValue xmi:id="_GjAosfqeEeelrPbTX981TA" tag="Version" value="0.1"/>
-  <taggedValue xmi:id="_GjAosvqeEeelrPbTX981TA" tag="Purpose" value=""/>
-  <taggedValue xmi:id="_GjAos_qeEeelrPbTX981TA" tag="Description" value=""/>
-  <taggedValue xmi:id="_GjAotPqeEeelrPbTX981TA" tag="Author" value=""/>
-  <taggedValue xmi:id="_GjAotfqeEeelrPbTX981TA" tag="otherParameter"/>
-  <parameters xmi:id="_Giu74fqeEeelrPbTX981TA" key="CONN_PARA_KEY_USERNAME" value="parthasarathyr"/>
-  <parameters xmi:id="_keHxkPqeEeelrPbTX981TA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
-</TalendMetadata:DatabaseConnection>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_GisfoPqeEeelrPbTX981TA" name="Redshift_Read_only_connection" id="_ndsWgPqdEeelrPbTX981TA" label="Redshift_Read_only_connection" dataPackage="_wDxwoPqfEeelrPbTX981TA" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://10.241.4.56:5439/dev" dbVersionString="PRIOR_TO_V9" Port="5439" Username="parthasarathyr" Password="hvV8EsWvFIsh8Sk0CUBhVw==" ServerName="10.241.4.56" DatasourceName="" FileFieldName="" SID="dev" SqlSynthax="SQL Syntax" StringQuote="Adsoln@123" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_Giu74PqeEeelrPbTX981TA" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_Gi4F0PqeEeelrPbTX981TA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_GjAosPqeEeelrPbTX981TA" tag="Status" value=""/>
+    <taggedValue xmi:id="_GjAosfqeEeelrPbTX981TA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_GjAosvqeEeelrPbTX981TA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_GjAos_qeEeelrPbTX981TA" tag="Description" value=""/>
+    <taggedValue xmi:id="_GjAotPqeEeelrPbTX981TA" tag="Author" value=""/>
+    <taggedValue xmi:id="_GjAotfqeEeelrPbTX981TA" tag="otherParameter"/>
+    <taggedValue xmi:id="_wDSBYPqfEeelrPbTX981TA" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_wDSBYfqfEeelrPbTX981TA" tag="DB ProductVersion" value="8.0.2"/>
+    <taggedValue xmi:id="_wDSBYvqfEeelrPbTX981TA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_Giu74fqeEeelrPbTX981TA" key="CONN_PARA_KEY_USERNAME" value="parthasarathyr"/>
+    <parameters xmi:id="_keHxkPqeEeelrPbTX981TA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_wDxwoPqfEeelrPbTX981TA" name="dev" dataManager="_GisfoPqeEeelrPbTX981TA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-wPqfEeelrPbTX981TA" name="dev"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-wfqfEeelrPbTX981TA" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-wvqfEeelrPbTX981TA" name="learnspectrum"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-w_qfEeelrPbTX981TA" name="learnspectrum3"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-xPqfEeelrPbTX981TA" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-xfqfEeelrPbTX981TA" name="pg_internal"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-xvqfEeelrPbTX981TA" name="prd"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-x_qfEeelrPbTX981TA" name="pro"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-yPqfEeelrPbTX981TA" name="public"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-yfqfEeelrPbTX981TA" name="qa"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-yvqfEeelrPbTX981TA" name="sjcspectrum"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-y_qfEeelrPbTX981TA" name="spectrum"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-zPqfEeelrPbTX981TA" name="spectrum1"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-zfqfEeelrPbTX981TA" name="spectrum2"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-zvqfEeelrPbTX981TA" name="spectrumdemo1ex"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-z_qfEeelrPbTX981TA" name="syrup_dev"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-0PqfEeelrPbTX981TA" name="syrup_qa"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-0fqfEeelrPbTX981TA" name="syrup_stg"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wDy-0vqfEeelrPbTX981TA" name="talend"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
