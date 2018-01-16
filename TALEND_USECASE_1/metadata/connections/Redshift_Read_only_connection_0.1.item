@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_GisfoPqeEeelrPbTX981TA" name="Redshift_Read_only_connection" id="_ndsWgPqdEeelrPbTX981TA" label="Redshift_Read_only_connection" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://10.241.4.56:5432/dev" dbVersionString="PRIOR_TO_V9" Port="5432" Username="parthasarathyr" Password="hvV8EsWvFIsh8Sk0CUBhVw==" ServerName="10.241.4.56" DatasourceName="" FileFieldName="" SID="dev" SqlSynthax="SQL Syntax" StringQuote="Adsoln@123&quot;" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+  <taggedValue xmi:id="_Giu74PqeEeelrPbTX981TA" tag="Is Conn Need Reload" value="false"/>
+  <taggedValue xmi:id="_Gi4F0PqeEeelrPbTX981TA" tag="package filter" value=""/>
+  <taggedValue xmi:id="_GjAosPqeEeelrPbTX981TA" tag="Status" value=""/>
+  <taggedValue xmi:id="_GjAosfqeEeelrPbTX981TA" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_GjAosvqeEeelrPbTX981TA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_GjAos_qeEeelrPbTX981TA" tag="Description" value=""/>
+  <taggedValue xmi:id="_GjAotPqeEeelrPbTX981TA" tag="Author" value=""/>
+  <taggedValue xmi:id="_GjAotfqeEeelrPbTX981TA" tag="otherParameter"/>
+  <parameters xmi:id="_Giu74fqeEeelrPbTX981TA" key="CONN_PARA_KEY_USERNAME" value="parthasarathyr"/>
+</TalendMetadata:DatabaseConnection>
