@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Redshift_dev_AdditionalParams" prompt="Redshift_dev_AdditionalParams?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="tcpKeepAlive=true"/>
+    <contextParameter comment="" name="Redshift_dev_Database" prompt="Redshift_dev_Database?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="dev"/>
+    <contextParameter comment="" name="Redshift_dev_Login" prompt="Redshift_dev_Login?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="parthasarathyr"/>
+    <contextParameter comment="" name="Redshift_dev_Password" prompt="Redshift_dev_Password?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_Password" value="hvV8EsWvFIsh8Sk0CUBhVw=="/>
+    <contextParameter comment="" name="Redshift_dev_Port" prompt="Redshift_dev_Port?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="5439"/>
+    <contextParameter comment="" name="Redshift_dev_Schema" prompt="Redshift_dev_Schema?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="talend"/>
+    <contextParameter comment="" name="Redshift_dev_Server" prompt="Redshift_dev_Server?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="10.241.4.56"/>
+  </context>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="224" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -106,4 +116,71 @@
     <routinesParameter id="_IDMY4PFlEeeJIpIEyjUnIA" name="TalendStringUtil"/>
     <routinesParameter id="_IDIugPFlEeeJIpIEyjUnIA" name="TalendString"/>
   </parameters>
+  <node componentName="tRedshiftConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Redshift_dev_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Redshift_dev_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_dev_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;Public&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="context.Redshift_dev_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudyEgMBxwFCu7Uf8kJe9KHmJtCJ9962gXY="/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Redshift_dev_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="&quot;Shared_RS_Dev_Connection&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Redshift_Connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Redshift_dev_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Redshift_dev_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_dev_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_dev_Schema" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Redshift_dev_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudyEgMBxwFCu7Uf8kJe9KHmJtCJ9962gXY=" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Redshift_dev_AdditionalParams" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;set search_path to &quot; + context.Redshift_dev_Schema"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="DUNS" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Setting Schema"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRedshiftRow_1">
+      <column comment="" key="false" length="20" name="DUNS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BUSINESS_INSIGHT_CLUSTER" nullable="true" pattern="" precision="-1" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRedshiftConnection_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftConnection_1" target="tRedshiftRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
 </talendfile:ProcessType>
