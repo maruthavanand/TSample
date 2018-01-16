@@ -9,4 +9,5 @@
   <taggedValue xmi:id="_GjAotPqeEeelrPbTX981TA" tag="Author" value=""/>
   <taggedValue xmi:id="_GjAotfqeEeelrPbTX981TA" tag="otherParameter"/>
   <parameters xmi:id="_Giu74fqeEeelrPbTX981TA" key="CONN_PARA_KEY_USERNAME" value="parthasarathyr"/>
+  <parameters xmi:id="_keHxkPqeEeelrPbTX981TA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
 </TalendMetadata:DatabaseConnection>
