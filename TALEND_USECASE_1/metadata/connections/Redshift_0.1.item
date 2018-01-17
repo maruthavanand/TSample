@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_RlmcQPt2EeelrPbTX981TA" name="Redshift" id="_G9ZugPt2EeelrPbTX981TA" label="Redshift" dataPackage="_Rrfo4Pt2EeelrPbTX981TA" DatabaseType="Redshift" DriverClass="com.amazon.redshift.jdbc41.Driver" URL="jdbc:redshift://10.241.4.56:5439/dev" Port="5439" Username="parthasarathyr" Password="hvV8EsWvFIsh8Sk0CUBhVw==" ServerName="10.241.4.56" DatasourceName="" FileFieldName="" SID="dev" SqlSynthax="SQL Syntax" StringQuote="dev&quot;" DbmsId="redshift_id" ProductId="REDSHIFT" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_RlnDUPt2EeelrPbTX981TA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_Rl7zcPt2EeelrPbTX981TA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_Rl9ooPt2EeelrPbTX981TA" tag="Status" value=""/>
+    <taggedValue xmi:id="_Rl9ooft2EeelrPbTX981TA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Rl9oovt2EeelrPbTX981TA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Rl9oo_t2EeelrPbTX981TA" tag="Description" value=""/>
+    <taggedValue xmi:id="_Rl9opPt2EeelrPbTX981TA" tag="Author" value=""/>
+    <taggedValue xmi:id="_Rl9opft2EeelrPbTX981TA" tag="otherParameter"/>
+    <taggedValue xmi:id="_RnqRwPt2EeelrPbTX981TA" tag="DB ProductName" value="Redshift"/>
+    <taggedValue xmi:id="_RnqRwft2EeelrPbTX981TA" tag="DB ProductVersion" value="08.00.0002"/>
+    <taggedValue xmi:id="_RnqRwvt2EeelrPbTX981TA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_RlnDUft2EeelrPbTX981TA" key="CONN_PARA_KEY_USERNAME" value="parthasarathyr"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Rrfo4Pt2EeelrPbTX981TA" name="dev" dataManager="_RlmcQPt2EeelrPbTX981TA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo4ft2EeelrPbTX981TA" name="dev"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo4vt2EeelrPbTX981TA" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo4_t2EeelrPbTX981TA" name="learnspectrum"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo5Pt2EeelrPbTX981TA" name="learnspectrum3"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo5ft2EeelrPbTX981TA" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo5vt2EeelrPbTX981TA" name="pg_internal"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo5_t2EeelrPbTX981TA" name="prd"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo6Pt2EeelrPbTX981TA" name="pro"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo6ft2EeelrPbTX981TA" name="public"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo6vt2EeelrPbTX981TA" name="qa"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo6_t2EeelrPbTX981TA" name="sjcspectrum"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo7Pt2EeelrPbTX981TA" name="spectrum"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo7ft2EeelrPbTX981TA" name="spectrum1"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo7vt2EeelrPbTX981TA" name="spectrum2"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo7_t2EeelrPbTX981TA" name="spectrumdemo1ex"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo8Pt2EeelrPbTX981TA" name="syrup_dev"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo8ft2EeelrPbTX981TA" name="syrup_qa"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo8vt2EeelrPbTX981TA" name="syrup_stg"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Rrfo8_t2EeelrPbTX981TA" name="talend"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
