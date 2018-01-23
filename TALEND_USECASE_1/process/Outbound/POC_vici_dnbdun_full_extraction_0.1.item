@@ -66,23 +66,25 @@
     <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
     <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
-    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
-    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
-    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
     <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/WS_Remote/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
-    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
-    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;jdbc:mysql://tal-tamc-db.cqmzephblces.us-east-1.rds.amazonaws.com:3306/amc&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR">
+      <elementValue elementRef="JAR_NAME" value="mysql-connector-java-5.1.30-bin.jar"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;com.mysql.jdbc.Driver&quot;"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
@@ -90,16 +92,16 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="qOgJxJ8aZ6+WS3QNqF2BzA=="/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;tstatcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;tlogcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;tflowmetercatcher&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
     <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
     <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
     <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
@@ -122,51 +124,6 @@
     <routinesParameter id="_8GJsMOyPEeeJefNqjDi1ZA" name="MDM"/>
     <routinesParameter id="_pSiZAOyLEee5va64MjJCzQ" name="SQLike"/>
   </parameters>
-  <node componentName="tRedshiftUnload" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftUnload_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;poc_vici_extract_tmp&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  duns as id, date_part(epoch, current_date) as insertion_time, date_part(epoch, dateadd(day,365,current_date)) as time_to_live, nvl2(duns,duns,'''')||''|''||nvl2(parent_duns,parent_duns,'''')||''|''||nvl2(domestic_ult_duns,domestic_ult_duns,'''')||''|''||nvl2(ult_duns,ult_duns,'''')||''|''||nvl2(company_name,company_name,'''')||''|''||nvl2(company_address,company_address,'''')||''|''||nvl2(company_city,company_city,'''')||''|''||nvl2(company_state,company_state,'''')||''|''||nvl2(company_zip5,company_zip5,'''')||''|''||nvl2(company_zip4,company_zip4,'''')||''|''||nvl2(company_county,company_county,'''')||''|''||nvl2(company_msa,company_msa,'''')||''|''||nvl2(company_region,company_region,'''')||''|''||nvl2(company_country,company_country,'''')||''|''||nvl2(fortune_1000,fortune_1000,'''')||''|''||nvl2(industry_naics,industry_naics,'''')||''|''||nvl2(naics_codes,naics_codes,'''')||''|''||nvl2(industry_sic,industry_sic,'''')||''|''||nvl2(sic_codes,sic_codes,'''')||''|''||nvl2(sales_annual,sales_annual,'''')||''|''||nvl2(sales_annual_num,sales_annual_num,'''')||''|''||nvl2(employees_at_location,employees_at_location,'''')||''|''||nvl2(employees_at_location_num,employees_at_location_num,'''')||''|''||nvl2(employees_in_all_locations,employees_in_all_locations,'''')||''|''||nvl2(employees_in_all_locations_num,employees_in_all_locations_num,'''')||''|''||nvl2(family_tree_size,family_tree_size,'''')||''|''||nvl2(family_tree_size_num,family_tree_size_num,'''')||''|''||nvl2(networth,networth,'''')||''|''||nvl2(networth_num,networth_num,'''')||''|''||nvl2(wallet_size,wallet_size,'''')||''|''||nvl2(card_offer_responsiveness,card_offer_responsiveness,'''')||''|''||nvl2(propensity_for_loan,propensity_for_loan,'''')||''|''||nvl2(propensity_for_lease,propensity_for_lease,'''')||''|''||nvl2(propensity_for_loc,propensity_for_loc,'''')||''|''||nvl2(it_expense,it_expense,'''')||''|''||nvl2(telecom_spend,telecom_spend,'''')||''|''||nvl2(tech_office_demand,tech_office_demand,'''')||''|''||nvl2(delinquency_rate,delinquency_rate,'''')||''|''||nvl2(how_they_pay,how_they_pay,'''')||''|''||concat(nvl2(marketability,marketability,''''),''|'') as value from talend.poc_vici_extract_tmp&quot;&#xD;&#xA;"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="redshift_id" show="false"/>
-    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;AKIAJDTZSM634KQQEOEQ&quot;"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="lrKVVRdZzEqsGC7nW3/cbUMmMii5s/omwgaSPmEtQLDeCrTIgv23RIKoHvImyGD4"/>
-    <elementParameter field="TEXT" name="BUCKET" value="&quot;smp-extract&quot;"/>
-    <elementParameter field="TEXT" name="OBJECTS_PREFIX" value="&quot;Test_vici/dnbdun/&quot; + context.YYYY_MM + &quot;/dunslookup_1_&quot; + context.YYYYMMDD + &quot;_&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="EXPORT_TYPE" value="DELIMITED_OR_CSV"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="'\t'"/>
-    <elementParameter field="CLOSED_LIST" name="TEXT_ENCLOSURE" value="DOUBLE_QUOTE"/>
-    <elementParameter field="TEXT" name="FIXEDWIDTH_MAPPING" value="&quot;column1:8,column2:64&quot;" show="false"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="GZIP"/>
-    <elementParameter field="CHECK" name="ENCRYPT" value="false"/>
-    <elementParameter field="TEXT" name="ENCRYPTED_KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_NULL_STRING" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="NULL_STRING" value="&quot;\\\\N&quot;"/>
-    <elementParameter field="CHECK" name="ESCAPE" value="true"/>
-    <elementParameter field="CHECK" name="ALLOWOVERWRITE" value="true"/>
-    <elementParameter field="CHECK" name="PARALLEL" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="unload DNBDUN"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRedshiftUnload_1">
-      <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="insertion_time" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="time_to_live" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="value" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tRedshiftConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftConnection_1" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.Redshift_dev_Server"/>
@@ -291,63 +248,6 @@
       <column comment="" key="false" length="-1" name="max_cluster_size" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tS3List" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3List_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;AKIAJDTZSM634KQQEOEQ&quot;"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="lrKVVRdZzEqsGC7nW3/cbUMmMii5s/omwgaSPmEtQLDeCrTIgv23RIKoHvImyGD4"/>
-    <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="false"/>
-    <elementParameter field="CHECK" name="ASSUME_ROLE" value="false"/>
-    <elementParameter field="TEXT" name="ARN" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="ROLE_SESSION_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SESSION_DURATION" value="15" show="false"/>
-    <elementParameter field="OPENED_LIST" name="REGION" value="DEFAULT"/>
-    <elementParameter field="CHECK" name="LISTALL" value="false"/>
-    <elementParameter field="TEXT" name="OBJECTS_PREFIX" value="&quot;Test_vici/dnbdun/2017-12/dunslookup_1_20171211_&quot;" show="false"/>
-    <elementParameter field="TABLE" name="BUCKETS">
-      <elementValue elementRef="BUCKET_NAME" value="&quot;LandingZone&quot;"/>
-      <elementValue elementRef="OBJECT_PREFIX" value="&quot;TalendPoc/dnbdun/&quot; + context.YYYY_MM + &quot;/dunslookup_&quot; + context.Vers + &quot;_&quot; + context.YYYYMMDD + &quot;_&quot;"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false"/>
-    <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
-    <elementParameter field="CHECK" name="SET_STS_ENDPOINT" value="false" show="false"/>
-    <elementParameter field="TEXT" name="STS_ENDPOINT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tS3Get" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Get_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;AKIAJDTZSM634KQQEOEQ&quot;"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="lrKVVRdZzEqsGC7nW3/cbUMmMii5s/omwgaSPmEtQLDeCrTIgv23RIKoHvImyGD4"/>
-    <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="false"/>
-    <elementParameter field="CHECK" name="ASSUME_ROLE" value="false"/>
-    <elementParameter field="TEXT" name="ARN" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="ROLE_SESSION_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SESSION_DURATION" value="15" show="false"/>
-    <elementParameter field="OPENED_LIST" name="REGION" value="DEFAULT"/>
-    <elementParameter field="CHECK" name="ENCRYPT" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="KEY_TYPE" value="KMS_CMK" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="ALGORITHM_SYMMETRIC_MASTER_KEY" value="AES" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="ALGORITHM_ASYMMETRIC_MASTER_KEY" value="RSA" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="ENCODING" value="BASE64" show="false"/>
-    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY_CMK" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY_BASE64" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="FILE" name="ENCRYPTED_KEY_X509" value="&quot;&quot;" show="false"/>
-    <elementParameter field="FILE" name="PUBLIC_KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="BUCKET" value="&quot;LandingZone&quot;"/>
-    <elementParameter field="TEXT" name="KEY" value="((String)globalMap.get(&quot;tS3List_1_CURRENT_KEY&quot;))"/>
-    <elementParameter field="FILE" name="FILE" value="&quot;/opt/Talend-6.4.1/AudienceSolution/Outbound/&quot; + ((String)globalMap.get(&quot;tS3List_1_CURRENT_KEY&quot;))"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false"/>
-    <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
-    <elementParameter field="CHECK" name="SET_STS_ENDPOINT" value="false" show="false"/>
-    <elementParameter field="TEXT" name="STS_ENDPOINT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
@@ -397,11 +297,6 @@
       <column comment="" key="false" length="-1" name="Time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tRedshiftClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="544">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftClose_2" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2" show="false"/>
@@ -548,10 +443,10 @@
       <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRedshiftCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="416">
+  <node componentName="tRedshiftCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftCommit_2" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRedshiftCommit_2">
       <column comment="" key="false" length="-1" name="iteration" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -584,14 +479,6 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRedshiftCommit_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftCommit_1" target="tFileInputFullRow_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tS3List_1" offsetLabelX="0" offsetLabelY="0" source="tS3List_1" target="tS3Get_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3List_1" offsetLabelX="0" offsetLabelY="0" source="tS3List_1" target="tRedshiftClose_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Logging" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -636,16 +523,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRedshiftCommit_2" offsetLabelX="0" offsetLabelY="0" source="tRedshiftCommit_2" target="tS3List_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
-  </connection>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftUnload_1" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="unload DNBDUN dataset into s3"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftConnection_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
@@ -669,20 +546,10 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3List_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Logging Queries"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftClose_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
