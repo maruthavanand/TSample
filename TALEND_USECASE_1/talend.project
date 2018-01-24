@@ -228,6 +228,7 @@
       <relatedItems xmi:id="_mIoS_fqbEeelrPbTX981TA" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Ic04oAECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA" version="Latest" type="property"/>
       <relatedItems xmi:id="_t5C28QEMEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_ser" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_dpBoQAEQEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_tlp" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_g67kQPw2EeeV5eLNP5ROIw">
       <baseItem xmi:id="_g68LUPw2EeeV5eLNP5ROIw" id="_IHe4wPw2EeeV5eLNP5ROIw" version="0.1" type="job"/>
