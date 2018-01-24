@@ -227,19 +227,8 @@
       <relatedItems xmi:id="_mIoS_PqbEeelrPbTX981TA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_mIoS_fqbEeelrPbTX981TA" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Ic04oAECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA" version="Latest" type="property"/>
-      <relatedItems xmi:id="_Ic04oQECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_icm" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04ogECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_industry_codes_crosswalk" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04owECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_sbp" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04pAECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_hvpf" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04pQECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_gdmi" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04pgECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_fsps" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04pwECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_fss" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04qAECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_eha" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04qQECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_via" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04qgECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_csm" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04qwECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_ccs" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04rAECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_psmp" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Ic04rQECEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_pcpre" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_t5C28AEMEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_tlp" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_t5C28QEMEeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_ser" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_g67kQPw2EeeV5eLNP5ROIw">
       <baseItem xmi:id="_g68LUPw2EeeV5eLNP5ROIw" id="_IHe4wPw2EeeV5eLNP5ROIw" version="0.1" type="job"/>
