@@ -282,7 +282,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_1"/>
   </node>
-  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
@@ -317,7 +317,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="192">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
@@ -339,7 +339,7 @@
       <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="192">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -428,6 +428,21 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRedshiftCommit_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftCommit_1" target="tS3List_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
+  <note opaque="true" posX="352" posY="32" sizeHeight="97" sizeWidth="289" text="Connecting Redshift database and &#xD;&#xA;setting the default schema">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
+  <note opaque="true" posX="384" posY="288" sizeHeight="97" sizeWidth="289" text="Commit the changes to Database">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
+  <note opaque="true" posX="352" posY="544" sizeHeight="97" sizeWidth="225" text="Closing the connection">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
+  <note opaque="true" posX="1088" posY="160" sizeHeight="97" sizeWidth="161" text="Load the data from&#xD;&#xA;Redshift query to&#xD;&#xA;S3 files">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
+  <note opaque="true" posX="544" posY="416" sizeHeight="97" sizeWidth="225" text="List and download the files &#xD;&#xA;from S3 bucket">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftConnection_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
