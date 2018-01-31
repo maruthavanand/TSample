@@ -483,6 +483,21 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
+  <note opaque="true" posX="384" posY="-192" sizeHeight="97" sizeWidth="289" text="Connecting Redshift database and &#xD;&#xA;setting the default schema">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
+  <note opaque="true" posX="960" posY="-32" sizeHeight="97" sizeWidth="225" text="Creating Redshift tables">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
+  <note opaque="true" posX="384" posY="96" sizeHeight="97" sizeWidth="289" text="Commit the changes to Database">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
+  <note opaque="true" posX="960" posY="224" sizeHeight="97" sizeWidth="257" text="Copy the data from S3 files &#xD;&#xA;and load them to Redshift tables">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
+  <note opaque="true" posX="384" posY="352" sizeHeight="97" sizeWidth="289" text="Commit the changes to Database &#xD;&#xA;and Closing the connection">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+  </note>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftConnection_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
