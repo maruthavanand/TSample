@@ -293,6 +293,19 @@
       <relatedItems xmi:id="_NALFogZ0EeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_ccs" version="Latest" type="schema"/>
       <relatedItems xmi:id="_NALFowZ0EeiZUIE0hiRJbA" id="_G9ZugPt2EeelrPbTX981TA - talend_psmp" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_KyYSIAaREei0Ka5wpbDvBg">
+      <baseItem xmi:id="_KyYSIQaREei0Ka5wpbDvBg" id="_NAEnUOC2Eeed2bvhqEVQlw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_KyYSIgaREei0Ka5wpbDvBg" id="_JUGyAOPOEeed2bvhqEVQlw" version="Latest" type="context"/>
+      <relatedItems xmi:id="_KyYSIwaREei0Ka5wpbDvBg" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KyYSJAaREei0Ka5wpbDvBg" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KyYSJQaREei0Ka5wpbDvBg" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KyYSJgaREei0Ka5wpbDvBg" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KyYSJwaREei0Ka5wpbDvBg" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KyYSKAaREei0Ka5wpbDvBg" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KyYSKQaREei0Ka5wpbDvBg" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KyYSKgaREei0Ka5wpbDvBg" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_KyYSKwaREei0Ka5wpbDvBg" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_H44mUPFlEeeJIpIEyjUnIA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_H45NYPFlEeeJIpIEyjUnIA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_H45NYfFlEeeJIpIEyjUnIA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
