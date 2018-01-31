@@ -305,6 +305,8 @@
       <relatedItems xmi:id="_KyYSKQaREei0Ka5wpbDvBg" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_KyYSKgaREei0Ka5wpbDvBg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_KyYSKwaREei0Ka5wpbDvBg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fpqtQAaVEei0Ka5wpbDvBg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fpqtQQaVEei0Ka5wpbDvBg" id="MDM" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_2dccgAaUEei0Ka5wpbDvBg">
       <baseItem xmi:id="_2dccgQaUEei0Ka5wpbDvBg" id="_2c1_kAaUEei0Ka5wpbDvBg" version="0.1" type="job"/>
