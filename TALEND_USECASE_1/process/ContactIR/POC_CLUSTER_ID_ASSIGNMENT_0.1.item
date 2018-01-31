@@ -929,6 +929,27 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tFileInputFullRow_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
   </connection>
+  <note opaque="true" posX="512" posY="-256" sizeHeight="97" sizeWidth="449" text="Connecting Redshift database and &#xD;&#xA;setting the default schema">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
+  </note>
+  <note opaque="true" posX="928" posY="32" sizeHeight="97" sizeWidth="289" text="Creating Tables">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
+  </note>
+  <note opaque="true" posX="1152" posY="288" sizeHeight="97" sizeWidth="513" text="Inserting an entry in ind_id_log table &#xD;&#xA;and initializing the variables PreVal &amp; CurVal">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
+  </note>
+  <note opaque="true" posX="1024" posY="544" sizeHeight="97" sizeWidth="641" text="Executing the Child job for ind_id_assignment in a loop&#xD;&#xA;and updating the values of PreVal &amp; CurVal variables">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
+  </note>
+  <note opaque="true" posX="416" posY="672" sizeHeight="97" sizeWidth="449" text="Commit the changes to Database">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
+  </note>
+  <note opaque="true" posX="928" posY="864" sizeHeight="97" sizeWidth="385" text="Assigning Retain_Cluster">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
+  </note>
+  <note opaque="true" posX="480" posY="992" sizeHeight="97" sizeWidth="481" text="Commit the changes to Database&#xD;&#xA;and Closing the connection">
+    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
+  </note>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
