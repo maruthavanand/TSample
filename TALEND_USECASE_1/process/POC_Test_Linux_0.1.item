@@ -8,6 +8,7 @@
     <contextParameter comment="" name="EC2_RemDirectory" prompt="EC2_RemDirectory?" promptNeeded="false" repositoryContextId="_JUGyAOPOEeed2bvhqEVQlw" type="id_String" value="/home/nehruj/talend"/>
   </context>
   <parameters>
+    <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
@@ -194,9 +195,9 @@
     <elementParameter field="PASSWORD" name="PASSWORD" value="ixahL2RVSXEQNsI6flFybA==" show="false"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASSPHRASE" value="wiXuUBxiyoc5L4zXsOuoEQ==" show="false"/>
-    <elementParameter field="DIRECTORY" name="REMOTEDIR" value="context.EC2_RemDirectory"/>
+    <elementParameter field="DIRECTORY" name="REMOTEDIR" value="context.EC2_RemDirectory + &quot;/2017-10&quot;"/>
     <elementParameter field="TABLE" name="FILELIST">
-      <elementValue elementRef="SOURCE" value="&quot;C:/Users/Administrator/Desktop/POC_Script/Outbound/Test_neustar/business/2017-10/duns-score-2017-10-000.gz&quot;"/>
+      <elementValue elementRef="SOURCE" value="&quot;/opt/Talend-6.4.1/AudienceSolution/Outbound/TalendPoc/business/2017-10/duns-score-2017-10-000.gz&quot;"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSCPPut_1"/>
