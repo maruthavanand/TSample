@@ -428,7 +428,7 @@
     <elementParameter field="PASSWORD" name="PASSWORD" value="ixahL2RVSXEQNsI6flFybA==" show="false"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASSPHRASE" value="wiXuUBxiyoc5L4zXsOuoEQ==" show="false"/>
-    <elementParameter field="DIRECTORY" name="REMOTEDIR" value="context.EC2_RemDirectory + &quot;/&quot; + context.YYYY_MM +"/>
+    <elementParameter field="DIRECTORY" name="REMOTEDIR" value="context.EC2_RemDirectory + &quot;/&quot; + context.YYYY_MM"/>
     <elementParameter field="TABLE" name="FILELIST">
       <elementValue elementRef="SOURCE" value="&quot;/opt/Talend-6.4.1/AudienceSolution/Outbound/TalendPoc/business/&quot; + context.YYYY_MM + &quot;/duns-score-&quot; + context.YYYY_MM + &quot;-000.gz&quot;"/>
     </elementParameter>
