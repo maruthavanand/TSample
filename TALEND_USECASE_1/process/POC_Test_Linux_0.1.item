@@ -117,14 +117,13 @@
     <routinesParameter id="_5Vj04vFmEeeJefNqjDi1ZA" name="MDM"/>
     <routinesParameter id="_H-eQ8PFlEeeJIpIEyjUnIA" name="SQLike"/>
   </parameters>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;10.241.4.84&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;22&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;nehruj&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.EC2_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.EC2_Port"/>
+    <elementParameter field="TEXT" name="USER" value="context.EC2_Username"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="ixahL2RVSXEQNsI6flFybA=="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kudwY3vrmld5kaJ0N4HDjSTg"/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_CONSOLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_CONSOLE"/>
@@ -132,7 +131,7 @@
     <elementParameter field="PASSWORD" name="PASSPHRASE" value="wiXuUBxiyoc5L4zXsOuoEQ==" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
-      <elementValue elementRef="COMMAND" value="&quot;gpg --recipient \&quot;Jude Colina\&quot; --trust-model always --output \&quot;/home/nehruj/talend/Test_File_2.pgp\&quot; --encrypt \&quot;/home/nehruj/talend/Test_File_2.txt\&quot;&quot;"/>
+      <elementValue elementRef="COMMAND" value="&quot;mkdir &quot; + context.EC2_RemDirectory + &quot;/2017-10;&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="TIMEOUT" value="60" show="false"/>
@@ -184,7 +183,45 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFTPPut_1"/>
   </node>
-  <node componentName="tSCPPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+  <node componentName="tSCPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSCPConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.EC2_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.EC2_Port"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.EC2_Username"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kudwY3vrmld5kaJ0N4HDjSTg"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="wiXuUBxiyoc5L4zXsOuoEQ==" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSCPClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSCPClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSCPConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.241.4.84&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;22&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;nehruj&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="ixahL2RVSXEQNsI6flFybA=="/>
+    <elementParameter field="CHECK" name="PTY" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_CONSOLE"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="wiXuUBxiyoc5L4zXsOuoEQ==" show="false"/>
+    <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TABLE" name="COMMANDS">
+      <elementValue elementRef="COMMAND" value="&quot;gpg --recipient \&quot;Jude Colina\&quot; --trust-model always --output \&quot;/home/nehruj/talend/Test_File_2.pgp\&quot; --encrypt \&quot;/home/nehruj/talend/Test_File_2.txt\&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="60" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSSH_2"/>
+  </node>
+  <node componentName="tSCPPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSCPPut_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSCPConnection_1"/>
@@ -202,43 +239,25 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSCPPut_1"/>
   </node>
-  <node componentName="tSCPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSCPConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.EC2_Host"/>
-    <elementParameter field="TEXT" name="PORT" value="context.EC2_Port"/>
-    <elementParameter field="TEXT" name="USERNAME" value="context.EC2_Username"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kudwY3vrmld5kaJ0N4HDjSTg"/>
-    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="wiXuUBxiyoc5L4zXsOuoEQ==" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tSCPClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSCPClose_1" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSCPConnection_1"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSSH_1" offsetLabelX="0" offsetLabelY="0" source="tSSH_1" target="tSCPPut_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSCPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tSCPConnection_1" target="tSSH_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSCPPut_1" offsetLabelX="0" offsetLabelY="0" source="tSCPPut_1" target="tSCPClose_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSCPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tSCPConnection_1" target="tSCPPut_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
-  </connection>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Folder Creation"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSCPPut_1" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Uploading File"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
@@ -252,6 +271,18 @@
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSCPClose_1" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Closing Connection"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSCPPut_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Uploading File"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
