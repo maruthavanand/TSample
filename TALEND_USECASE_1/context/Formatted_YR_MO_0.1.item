@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_XRB-UPSBEeeyTafi9Hj9Lg" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_XRClYPSBEeeyTafi9Hj9Lg" comment="" name="YYYY" prompt="YYYY?" promptNeeded="false" type="id_String" value="2017"/>
-  <contextParameter xmi:id="_XRClYfSBEeeyTafi9Hj9Lg" comment="" name="MM" prompt="MM?" promptNeeded="false" type="id_String" value="12"/>
-  <contextParameter xmi:id="_XRClYvSBEeeyTafi9Hj9Lg" comment="" name="YYYYMM" prompt="YYYYMM?" promptNeeded="false" type="id_String" value="201712"/>
-  <contextParameter xmi:id="_XRClY_SBEeeyTafi9Hj9Lg" comment="" name="YYYY_MM" prompt="YYYY_MM?" promptNeeded="false" type="id_String" value="2017-10"/>
-  <contextParameter xmi:id="_XRClZPSBEeeyTafi9Hj9Lg" comment="" name="YYYYMMDD" prompt="YYYYMMDD?" promptNeeded="false" type="id_String" value="20171218"/>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ZxzSIAguEeiBR4K2-Fc8Gw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_ZxzSIQguEeiBR4K2-Fc8Gw" comment="" name="YYYY" prompt="YYYY?" promptNeeded="false" type="id_String" value="2017"/>
+  <contextParameter xmi:id="_ZxzSIgguEeiBR4K2-Fc8Gw" comment="" name="MM" prompt="MM?" promptNeeded="false" type="id_String" value="12"/>
+  <contextParameter xmi:id="_ZxzSIwguEeiBR4K2-Fc8Gw" comment="" name="YYYYMM" prompt="YYYYMM?" promptNeeded="false" type="id_String" value="201712"/>
+  <contextParameter xmi:id="_ZxzSJAguEeiBR4K2-Fc8Gw" comment="" name="YYYY_MM" prompt="YYYY_MM?" promptNeeded="false" type="id_String" value="2017-10"/>
+  <contextParameter xmi:id="_ZxzSJQguEeiBR4K2-Fc8Gw" comment="" name="YYYYMMDD" prompt="YYYYMMDD?" promptNeeded="false" type="id_String" value="20171218"/>
 </talendfile:ContextType>
